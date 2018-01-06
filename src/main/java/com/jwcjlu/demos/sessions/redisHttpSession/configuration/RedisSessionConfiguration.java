@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.data.redis.connection.RedisClusterConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
+import org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration;
 
 import redis.clients.jedis.JedisPoolConfig;
 
@@ -32,7 +33,7 @@ import redis.clients.jedis.JedisPoolConfig;
  */
 @Configuration
 @EnableRedisHttpSession(redisNamespace="ejob-console")
-public class RedisSessionConfiguration
+public class RedisSessionConfiguration extends RedisHttpSessionConfiguration
 {
     @Value("${maxRedirections}")
     private int maxRedirects;
