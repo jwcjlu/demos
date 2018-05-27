@@ -5,7 +5,10 @@
   <groupId>com.jwcjlu</groupId>
   <artifactId>demos</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <modules>
+        <module>apm</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <name>demos</name>
   <url>http://maven.apache.org</url>
@@ -21,12 +24,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    	<dependency>
+    <dependency>
 		      <groupId>com.google.guava</groupId>
 		      <artifactId>guava</artifactId>
 		      <version>16.0.1</version>
 		      <scope>compile</scope>
-		    </dependency>
+    </dependency>
     <dependency>
 	    <groupId>io.dropwizard.metrics</groupId>
 	    <artifactId>metrics-core</artifactId>
@@ -50,9 +53,26 @@
     <artifactId>metrics-influxdb</artifactId>
     <version>0.6.0</version>
 </dependency>
-	
-	
-	<!-- jetty  configuration  restful start-->
+
+      <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+      <dependency>
+          <groupId>io.grpc</groupId>
+          <artifactId>grpc-netty</artifactId>
+          <version>1.11.0</version>
+      </dependency>
+      <dependency>
+          <groupId>io.grpc</groupId>
+          <artifactId>grpc-protobuf</artifactId>
+          <version>1.11.0</version>
+      </dependency>
+      <dependency>
+          <groupId>io.grpc</groupId>
+          <artifactId>grpc-stub</artifactId>
+          <version>1.11.0</version>
+      </dependency>
+
+
+      <!-- jetty  configuration  restful start-->
 	<dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-servlet</artifactId>
@@ -135,10 +155,12 @@
           <artifactId>byte-buddy</artifactId>
           <version>1.8.4</version>
       </dependency>
-      <!-- spring redis   session  end-->
   </dependencies>
-  <build>    
-     <pluginManagement>    
+
+
+
+    <build>
+
        <plugins>  
        <plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -165,7 +187,6 @@
                      <target>1.7</target>    
                  </configuration>    
              </plugin>    
-         </plugins>    
-     </pluginManagement>    
- </build>  
+         </plugins>
+ </build>
 </project>

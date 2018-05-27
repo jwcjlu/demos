@@ -1,3 +1,4 @@
+/*
 package com.jwcjlu.demos.jetty.restful;
 
 import java.util.EnumSet;
@@ -21,6 +22,7 @@ import com.google.common.base.Optional;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.spi.spring.container.servlet.SpringServlet;
 
+*/
 /**
  * <pre>
  * 
@@ -36,7 +38,8 @@ import com.sun.jersey.spi.spring.container.servlet.SpringServlet;
  *  2017年11月17日				jinwei				Initial.
  *
  * </pre>
- */
+ *//*
+
 public class RestfulServer
 {
     
@@ -49,25 +52,29 @@ public class RestfulServer
         servletContextHandler = buildServletContextHandler();
     }
     
-    /**
+    */
+/**
      * 启动内嵌的RESTful服务器.
      * 
      * @param packages RESTful实现类所在包
      * @param resourcePath 资源路径
      * @throws Exception 启动服务器异常
-     */
+     *//*
+
     public void start(final String packages, final Optional<String> resourcePath) throws Exception {
         start(packages, resourcePath, Optional.of("/api"));
     }
     
-    /**
+    */
+/**
      * 启动内嵌的RESTful服务器.
      *
      * @param packages RESTful实现类所在包
      * @param resourcePath 资源路径
      * @param servletPath servlet路径
      * @throws Exception 启动服务器异常
-     */
+     *//*
+
     public void start(final String packages, final Optional<String> resourcePath, final Optional<String> servletPath) throws Exception {
   
         HandlerList handlers = new HandlerList();
@@ -93,13 +100,15 @@ public class RestfulServer
       
         }
     
-    /**
+    */
+/**
      * 添加Filter.
      *
      * @param filterClass filter实现类
      * @param urlPattern 过滤的路径
      * @return RESTful服务器
-     */
+     *//*
+
     public RestfulServer addFilter(final Class<? extends Filter> filterClass, final String urlPattern) {
         servletContextHandler.addFilter(filterClass, urlPattern, EnumSet.of(DispatcherType.REQUEST));
         return this;
@@ -121,10 +130,12 @@ public class RestfulServer
         return result;
     }
     
-    /**
+    */
+/**
      *  停止内嵌的RESTful服务器.
      * 
-     */
+     *//*
+
     public void stop() {
   
         try {
@@ -137,3 +148,4 @@ public class RestfulServer
     }
 }
 
+*/
