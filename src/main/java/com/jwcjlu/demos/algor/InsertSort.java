@@ -3,6 +3,7 @@ package com.jwcjlu.demos.algor;
 import java.util.Arrays;
 
 /**
+ * 插入排序
  * Created by jwcjlu on 2019/8/1.
  */
 public class InsertSort {

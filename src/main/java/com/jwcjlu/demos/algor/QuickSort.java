@@ -3,6 +3,7 @@ package com.jwcjlu.demos.algor;
 import java.util.Arrays;
 
 /**
+ * 快速排序
  * Created by jwcjlu on 2019/8/2.
  */
 public class QuickSort {

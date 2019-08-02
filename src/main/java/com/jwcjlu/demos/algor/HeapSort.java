@@ -3,6 +3,10 @@ package com.jwcjlu.demos.algor;
 import java.util.Arrays;
 
 /**
+ * 堆排序步骤：
+ * 1：先构建一个最大堆
+ * 2：在1的前提下，数组的第一个元素是最大的，放到数据的最后一个值
+ * 3：不断循环步骤1，2到第一个元素
  * Created by jwcjlu on 2019/8/1.
  */
 public class HeapSort {
