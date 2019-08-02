@@ -152,6 +152,13 @@
           <artifactId>byte-buddy</artifactId>
           <version>1.8.4</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.16.18</version>
+          <scope>provided</scope>
+      </dependency>
 
       <dependency>
           <groupId>junit</groupId>
@@ -170,7 +177,21 @@
           <artifactId>graphql-java</artifactId>
           <version>8.0</version>
       </dependency>
-
+      <dependency>
+          <groupId>org.apache.pulsar</groupId>
+          <artifactId>pulsar-client</artifactId>
+          <version>2.3.0</version>
+      </dependency>
+      <dependency>
+          <groupId>io.reactivex.rxjava2</groupId>
+          <artifactId>rxjava</artifactId>
+          <version>2.2.0</version>
+      </dependency>
+      <dependency>
+          <groupId>com.github.akarnokd</groupId>
+          <artifactId>rxjava2-extensions</artifactId>
+          <version>0.20.0</version>
+      </dependency>
   </dependencies>
 
 
@@ -199,8 +220,8 @@
                  <version>2.5.1</version>    
                  <configuration>    
                      <encoding>UTF-8</encoding>  
-                     <source>1.7</source>  
-                     <target>1.7</target>    
+                     <source>1.8</source>
+                     <target>1.8</target>
                  </configuration>    
              </plugin>    
          </plugins>

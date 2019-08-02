@@ -83,9 +83,9 @@ public class MainApp {
 
         GraphQL graphQL = GraphQL.newGraphQL(schema).build();
         System.err.println("====================================");
-        System.err.println(graphQL.execute("{person(id:1){id,name,dogs{id,name,age}}}").getData());
-        System.err.println(graphQL.execute("{person(id:2){id,name,dogs{id,name}}}").getData());
-        System.err.println(graphQL.execute("{person(id:3){id,name,dogs{id,name,age}}}").getData());
+        System.err.println(graphQL.execute("{person(id:1){id,name,dogs{id,name,age}}}").getData().toString());
+        System.err.println(graphQL.execute("{person(id:2){id,name,dogs{id,name}}}").getData().toString());
+        System.err.println(graphQL.execute("{person(id:3){id,name,dogs{id,name,age}}}").getData().toString());
     }
 
     private static void init() throws IOException {
